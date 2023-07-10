@@ -23,11 +23,11 @@ import CallReceivedIcon from '@mui/icons-material/CallReceived';
 const Notification = (props) => {
 
 const [authenticated, setauthenticated] = useState(null);
-  useEffect(() => {
-          const loggedInUser = localStorage.getItem("authenticated");
-          setauthenticated(localStorage.getItem("authenticated"))
-          console.log(loggedInUser)
-        }, []);
+  // useEffect(() => {
+  //         const loggedInUser = localStorage.getItem("authenticated");
+  //         setauthenticated(localStorage.getItem("authenticated"))
+  //         console.log(loggedInUser)
+  //       }, []);
       
 const [name,setName] = useState([])
 const [color,setColor] = useState(true)
@@ -104,13 +104,13 @@ const year = (e)=>{
 }
 
 // console.log(typeof(localStorage.getItem("authenticated")))
-if (localStorage.getItem("authenticated") === 'false') 
-{
-    console.log("hello")
-    return <Navigate replace to="/Signin" />;
-} 
+// if (localStorage.getItem("authenticated") === 'false') 
+// {
+//     console.log("hello")
+//     return <Navigate replace to="/Signin" />;
+// } 
 
-else {
+// else {
         
 
     const Logout = () => {
@@ -216,6 +216,6 @@ else {
 
 </Box> 
   )
-}};
+};
 
 export default Notification

@@ -75,11 +75,11 @@ const [color,setColor] = useState(true)
 
   const [authenticated, setauthenticated] = useState(null);
   const navigate = useNavigate();
-    useEffect(() => {
-        const loggedInUser = localStorage.getItem("authenticated");
-        setauthenticated(localStorage.getItem("authenticated"))
-        // console.log(loggedInUser)
-      }, []);
+    // useEffect(() => {
+    //     const loggedInUser = localStorage.getItem("authenticated");
+    //     setauthenticated(localStorage.getItem("authenticated"))
+    //     // console.log(loggedInUser)
+    //   }, []);
 
       const [name,setName] = useState([])
       useEffect(() => {
@@ -102,12 +102,12 @@ const [color,setColor] = useState(true)
        }
      }
 
-      if (localStorage.getItem("authenticated") === 'false') {
-        return <Navigate replace to="/Signin" />;
-} 
+//       if (localStorage.getItem("authenticated") === 'false') {
+//         return <Navigate replace to="/Signin" />;
+// } 
 
 
-else {
+// else {
 
     const Logout = () => {
         setauthenticated(false)
@@ -210,6 +210,6 @@ else {
       </Box>
     )
     }
-}
+
 
 export default Payment;

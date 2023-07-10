@@ -22,11 +22,11 @@ function Support() {
 
 
     const [authenticated, setauthenticated] = useState(null);
-  useEffect(() => {
-          const loggedInUser = localStorage.getItem("authenticated");
-          setauthenticated(localStorage.getItem("authenticated"))
-          console.log(loggedInUser)
-        }, []);
+  // useEffect(() => {
+  //         const loggedInUser = localStorage.getItem("authenticated");
+  //         setauthenticated(localStorage.getItem("authenticated"))
+  //         console.log(loggedInUser)
+  //       }, []);
       
 const [name,setName] = useState([])
 useEffect(() => {
@@ -51,13 +51,13 @@ const Closebar = ()=>{
   }
   
 
-if (localStorage.getItem("authenticated") === 'false') 
-{
-    return <Navigate replace to="/Signin" />;
-} 
+// if (localStorage.getItem("authenticated") === 'false') 
+// {
+//     return <Navigate replace to="/Signin" />;
+// } 
 
 
-    else{
+//     else{
         const Logout = () => {
             setauthenticated(false)
             console.log("hi")
@@ -175,6 +175,6 @@ if (localStorage.getItem("authenticated") === 'false')
 
   )
 }
-}
+
 
 export default Support
