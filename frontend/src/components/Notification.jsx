@@ -104,13 +104,13 @@ const year = (e)=>{
 }
 
 // console.log(typeof(localStorage.getItem("authenticated")))
-// if (localStorage.getItem("authenticated") === 'false') 
-// {
-//     console.log("hello")
-//     return <Navigate replace to="/Signin" />;
-// } 
+if (localStorage.getItem("authenticated") === 'false') 
+{
+    console.log("hello")
+    return <Navigate replace to="/Signin" />;
+} 
 
-// else {
+else {
         
 
     const Logout = () => {
@@ -216,6 +216,6 @@ const year = (e)=>{
 
 </Box> 
   )
-};
+}};
 
 export default Notification

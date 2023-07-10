@@ -102,12 +102,12 @@ const [color,setColor] = useState(true)
        }
      }
 
-//       if (localStorage.getItem("authenticated") === 'false') {
-//         return <Navigate replace to="/Signin" />;
-// } 
+      if (localStorage.getItem("authenticated") === 'false') {
+        return <Navigate replace to="/Signin" />;
+} 
 
 
-// else {
+else {
 
     const Logout = () => {
         setauthenticated(false)
@@ -210,6 +210,6 @@ const [color,setColor] = useState(true)
       </Box>
     )
     }
-
+}
 
 export default Payment;

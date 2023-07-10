@@ -100,11 +100,11 @@ const Closebar = ()=>{
   }
 }
 
-  // useEffect(() => {
-  //         const loggedInUser = localStorage.getItem("authenticated");
-  //         setauthenticated(localStorage.getItem("authenticated"))
-  //         console.log(loggedInUser)
-  //       }, []);
+  useEffect(() => {
+          const loggedInUser = localStorage.getItem("authenticated");
+          setauthenticated(localStorage.getItem("authenticated"))
+          console.log(loggedInUser)
+        }, []);
       
 const [name,setName] = useState([])
 useEffect(() => {
@@ -119,12 +119,12 @@ useEffect(() => {
 // const location = useLocation()
 
 const navigate = useNavigate();
-// if (localStorage.getItem("authenticated") === 'false') 
-// {
-//     return <Navigate replace to="/Signin" />;
-// } 
+if (localStorage.getItem("authenticated") === 'false') 
+{
+    return <Navigate replace to="/Signin" />;
+} 
 
-// else {
+else {
   const expenditureData = expenses.filter(entry => entry.type === 'Expenditure');
 
   const totalExpenditure = expenditureData.reduce((sum, entry) => sum + entry.amount, 0);
@@ -366,6 +366,6 @@ const navigate = useNavigate();
       
    
   )
-};
+}};
 
 export default Dashboard

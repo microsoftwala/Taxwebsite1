@@ -24,11 +24,11 @@ import { Button, Typography,Box } from '@mui/material';
 function Taxcalculator() {
     const [authenticated, setauthenticated] = useState(null);
     const navigate = useNavigate();
-  // useEffect(() => {
-  //         const loggedInUser = localStorage.getItem("authenticated");
-  //         setauthenticated(localStorage.getItem("authenticated"))
-  //         console.log(loggedInUser)
-  //       }, []);
+  useEffect(() => {
+          const loggedInUser = localStorage.getItem("authenticated");
+          setauthenticated(localStorage.getItem("authenticated"))
+          console.log(loggedInUser)
+        }, []);
 
 
         const [bar,setBar] = useState(true)
@@ -112,12 +112,12 @@ function Taxcalculator() {
         { x: 'Taxrefund', y: ntax["Taxrefund"], text: 'Taxrefund', fill: '#0450C2' }
     ]
 
-// if (localStorage.getItem("authenticated") === 'false') {
-//             return <Navigate replace to="/Signin" />;
-//  } 
+if (localStorage.getItem("authenticated") === 'false') {
+            return <Navigate replace to="/Signin" />;
+ } 
 
 
-// else {
+else {
 
     const Logout = () => {
         setauthenticated(false)
@@ -260,6 +260,6 @@ function Taxcalculator() {
     </Box>
   )
 }
-
+}
 
 export default Taxcalculator
