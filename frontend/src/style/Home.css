@@ -1,0 +1,70 @@
+
+.Nav{
+    display: flex;
+    padding:0 15px;
+    align-items: center;
+}
+
+.Navs{
+    display: flex;
+    padding:0 15px;
+    align-items: center;
+}
+
+.Nav:hover{
+    background-color: black;
+    padding:15px;
+    border-radius: 20px;
+    color: azure;
+}
+
+
+.Navs:hover{
+    background-color: black;
+    padding:3px 15px;
+    border-radius: 20px;
+    color: azure;
+}
+
+.Nave{
+    height:45px;
+    background-color: black;
+    border-radius: 20px;
+    color: azure;
+    padding-right: 15px;
+    border-radius: 20px;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.Nave:hover{
+    background-color: rgb(108, 108, 108);
+}
+
+.input{
+    margin-left: 20px;
+}
+
+
+input:focus{
+    outline: none;
+}
+
+
+.card:hover{
+    background-color: black;
+    color:aliceblue;
+}
+
+
+
+#button1:hover{
+    background-color: rgb(185, 171, 171);
+    width:"50px"
+}
+
+#button2:hover{
+    background-color: rgb(185, 171, 171);
+}
+
