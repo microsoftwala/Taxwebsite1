@@ -33,7 +33,7 @@ const [name,setName] = useState([])
 const [color,setColor] = useState(true)
 useEffect(() => {
   axios
-    .get('/login')
+    .get('https://taxbackend.onrender.com/login')
     .then((response) => {
       setName(response.data);
     })
@@ -71,7 +71,7 @@ const Check = () =>{
 const [history,setHistory] = useState([])
 useEffect(() => 
 {
- axios.get("/payment").then((response)=>{
+ axios.get("https://taxbackend.onrender.com/payment").then((response)=>{
   setHistory(response.data)
 })
 .catch(error => {
@@ -115,7 +115,7 @@ else {
 
     const Logout = () => {
         setauthenticated(false)
-        console.log("hi")
+        // console.log("hi")
         localStorage.setItem("authenticated",false)
         navigate("/Signin");
                 }
