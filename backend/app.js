@@ -8,6 +8,12 @@ const nodemailer = require("nodemailer")
 const cors = require('cors');
 const bcrypt = require('bcryptjs')
 
+
+var dates = new Date().getDate()
+var month = new Date().getMonth()
+var year = new Date().getFullYear()
+var time = new Date().toLocaleTimeString()
+
 const corsOptions ={
     origin:'https://taxbackend.onrender.com', 
     credentials:true,           
