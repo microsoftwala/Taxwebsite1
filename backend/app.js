@@ -9,7 +9,7 @@ const cors = require('cors');
 const bcrypt = require('bcryptjs')
 
 const corsOptions ={
-    origin:'https://backend/onrender.com', 
+    origin:'https://taxbackend.onrender.com', 
     credentials:true,           
     optionSuccessStatus:200
 }
