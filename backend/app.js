@@ -15,7 +15,7 @@ var year = new Date().getFullYear()
 var time = new Date().toLocaleTimeString()
 
 const corsOptions ={
-    origin:'https://taxbackend.onrender.com', 
+    origin:'https://main--beamish-gnome-ea7495.netlify.app', 
     credentials:true,           
     optionSuccessStatus:200
 }
