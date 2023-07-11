@@ -84,7 +84,7 @@ const [expenses,setExpenses] = useState([])
 
 useEffect(() => 
 {
- axios.get("/payment").then((response)=>{
+ axios.get("https://taxbackend.onrender.com/payment").then((response)=>{
   setExpenses(response.data)
 })
 .catch(error => {
@@ -109,7 +109,7 @@ const Closebar = ()=>{
 const [name,setName] = useState([])
 useEffect(() => {
   axios
-    .get('/login')
+    .get('https://taxbackend.onrender.com/login')
     .then((response) => {
       setName(response.data);
     })
