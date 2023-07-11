@@ -19,11 +19,11 @@ var time = new Date().toLocaleTimeString()
 //     credentials:true,           
 //     optionSuccessStatus:200
 // }
+const app = express()
 app.use(cors({
     origin: 'https://main--beamish-gnome-ea7495.netlify.app',
     credentials: true
 }));
-const app = express()
 
 app.set('view engine','ejs')
 app.use(bodyParser.urlencoded({extended:true}))
