@@ -1,7 +1,7 @@
 {
   "name": "frontend",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "proxy": "https://taxbackend.onrender.com",
   "dependencies": {
     "@emotion/react": "^11.11.1",
@@ -28,7 +28,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "cross-env CI=false react-scripts build",
     "test": "react-scripts test --watchAll=false",
     "eject": "react-scripts eject"
   },
