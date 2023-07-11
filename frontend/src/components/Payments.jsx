@@ -38,7 +38,7 @@ const [authenticated, setauthenticated] = useState(null);
 const [name,setName] = useState([])
 useEffect(() => {
   axios
-    .get('https://taxbackend.onrender.com/login')
+    .get('/login')
     .then((response) => {
       setName(response.data);
     })
@@ -49,7 +49,7 @@ useEffect(() => {
 const [history,setHistory] = useState([])
 useEffect(() => 
 {
- axios.get("https://taxbackend.onrender.com/payment").then((response)=>{
+ axios.get("/payment").then((response)=>{
   setHistory(response.data)
 })
 .catch(error => {

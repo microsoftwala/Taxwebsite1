@@ -31,7 +31,7 @@ function Support() {
 const [name,setName] = useState([])
 useEffect(() => {
   axios
-    .get('https://taxbackend.onrender.com/login')
+    .get('/login')
     .then((response) => {
       setName(response.data);
     })

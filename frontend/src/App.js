@@ -1,6 +1,6 @@
 import './App.css';
 import React from "react"
-import { BrowserRouter,
+import {
   Routes,
   Route,
 } from "react-router-dom";
@@ -33,8 +33,7 @@ function App() {
   return (
 
     <div className="App">
-     <BrowserRouter>
-      <Routes>
+    <Routes>
         <Route path="/Signin" element={<Signin/>} />
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About/>} />
@@ -49,8 +48,8 @@ function App() {
         <Route path="/calculator" element={<Taxcalculator/>} />
         <Route path="/support" element={<Support/>} />
         <Route path="/tax" element={<TaxData />} />
-        </Routes>
-    </BrowserRouter>
+        
+    </Routes>
     </div>
   );
 }

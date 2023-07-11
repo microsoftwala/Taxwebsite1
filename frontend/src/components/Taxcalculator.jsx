@@ -53,7 +53,7 @@ function Taxcalculator() {
         }
 
         const [name,setName] = useState([])
-        axios.get('https://taxbackend.onrender.com/login')
+        axios.get('/login')
        .then((response) => {
            setName(response.data)})
        .catch((error) => console.log(error))        
@@ -74,7 +74,7 @@ function Taxcalculator() {
        const handleData = async (e) =>{
            e.preventDefault()
            const { Totalsalary,Investment,TDS,Age } = data
-           await axios.post("https://taxbackend.onrender.com/taxcalculator",{
+           await axios.post("/taxcalculator",{
             totalsalary:Totalsalary,
             investment:Investment,
             tds:TDS,
