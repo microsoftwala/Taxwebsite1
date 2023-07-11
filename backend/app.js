@@ -14,11 +14,15 @@ var month = new Date().getMonth()
 var year = new Date().getFullYear()
 var time = new Date().toLocaleTimeString()
 
-const corsOptions ={
-    origin:'https://main--beamish-gnome-ea7495.netlify.app', 
-    credentials:true,           
-    optionSuccessStatus:200
-}
+// const corsOptions ={
+//     origin:'https://main--beamish-gnome-ea7495.netlify.app', 
+//     credentials:true,           
+//     optionSuccessStatus:200
+// }
+app.use(cors({
+    origin: 'https://main--beamish-gnome-ea7495.netlify.app',
+    credentials: true
+}));
 const app = express()
 
 app.set('view engine','ejs')
