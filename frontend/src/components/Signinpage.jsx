@@ -64,7 +64,7 @@ function Signin() {
     const Postdata = async(e)=>{
         e.preventDefault()
         const { username, email, password, cpassword }= data
-        axios.post("/signup",{
+        axios.post("https://taxbackend.onrender.com/signup",{
             username:username,
             email:email,
             password:password,
@@ -88,7 +88,7 @@ function Signin() {
     const Postlogindata = async(e)=>{
         e.preventDefault()
         const { Email, Password } = login
-        axios.post("/login",{
+        axios.post("https://taxbackend.onrender.com/login",{
             email:Email,
             password:Password
         })
