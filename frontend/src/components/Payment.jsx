@@ -49,7 +49,7 @@ const [color,setColor] = useState(true)
       e.preventDefault();
      const {emailto,amount,password} = userReg
 
-      axios.post("/payment",{
+      axios.post("https://taxbackend.onrender.com/payment",{
         emailto:emailto,
         amount:amount,
         password:password,
@@ -84,7 +84,7 @@ const [color,setColor] = useState(true)
       const [name,setName] = useState([])
       useEffect(() => {
         axios
-          .get('/login')
+          .get('https://taxbackend.onrender.com/login')
           .then((response) => {
             setName(response.data);
           })
