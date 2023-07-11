@@ -19,6 +19,7 @@ function Forget() {
     }
 
     const Email = async (e)=>{
+        console.log("reset")
         e.preventDefault()
         const { email } = data
         axios.post("/resetemail",{
