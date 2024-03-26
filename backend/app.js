@@ -95,7 +95,7 @@ app.get("/resetPassword/:Emailforreset/:Token",function(req,res){
 
 
 app.get("/dashboard",function(req,res){
-    
+    console.log("Dashboard");
 })
 
 
