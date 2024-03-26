@@ -22,7 +22,7 @@ function Forget() {
         console.log("reset")
         e.preventDefault()
         const { email } = data
-        axios.post("https://taxbackend.onrender.com/resetemail",{
+        await axios.post("https://taxbackend.onrender.com/resetemail",{
             email:email,
         })
         .then((res)=>{
